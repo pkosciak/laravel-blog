@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Blog</title>
-</head>
-<body>
+<x-layout>
     <article>
         <h1>
-            <?= $post->title; ?>
+            {{ $post->title }}
         </h1>
-        <div><?= $post->body; ?></div>
+        <div>
+            {!! $post->body !!}
+        </div>
         <hr>
         <a href="/">go back</a>
     </article>
-</body>
-</html>
+</x-layout>
